@@ -4,7 +4,7 @@
 
 - Developed by arshia farrokhi
 
-- Technologies Used - Html , css , sass
+- Technologies Used - Html , css , sass , bootstrap
 
 - Role - Frontend
 
