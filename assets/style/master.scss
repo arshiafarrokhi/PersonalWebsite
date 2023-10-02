@@ -3,7 +3,8 @@ body {
     color: #F2F2F2;
     user-select: none;
 }
-#main{
+
+#main {
     font-family: 'Source Sans 3', sans-serif;
     width: 100%;
 
@@ -13,20 +14,22 @@ body {
         left: 0;
         filter: blur(5px);
     }
-    .page1{
-        .menu{
+
+    .page1 {
+        .menu {
             position: fixed;
             top: 5%;
             left: 90%;
             z-index: 50;
             font-size: 30px;
-            
-            &:hover{
+
+            &:hover {
                 cursor: pointer;
 
             }
         }
-        .lhead{
+
+        .lhead {
             overflow: hidden;
 
             @media screen and (min-width : 768px) {
@@ -35,13 +38,14 @@ body {
                 left: 0;
                 height: 100vh;
             }
+
             @media screen and (max-width : 768px) {
                 position: relative;
             }
 
-            .h-img{
+            .h-img {
 
-                >article{
+                >article {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -58,20 +62,21 @@ body {
                     animation: 1s ease-in-out infinite alternate forwards;
                     text-shadow: #FC0 5px 10px 200px;
 
-                    &:hover{
-                        animation-name: anime1 ;
+                    &:hover {
+                        animation-name: anime1;
                     }
 
-            
-                    @keyframes anime1{
-                        to{
+
+                    @keyframes anime1 {
+                        to {
                             top: 50%;
                             left: 50%;
                             transform: translateX(-50%) translateY(-50%) scale(1.2);
                             opacity: .6;
                             word-spacing: 2px;
                         }
-                        from{
+
+                        from {
                             top: 50%;
                             left: 50%;
                             transform: translateX(-50%) translateY(-50%) scale(1);
@@ -79,10 +84,11 @@ body {
                         }
                     }
                 }
-                img{
+
+                img {
                     border-radius: 20px;
                     overflow: hidden;
-                    box-shadow: -16px 17px 23px 7px rgba(0,0,0,0.65);
+                    box-shadow: -16px 17px 23px 7px rgba(0, 0, 0, 0.65);
                     object-fit: cover;
                 }
 
@@ -93,11 +99,12 @@ body {
                     transition: .6s;
                     letter-spacing: 6px;
 
-                    &:hover{
+                    &:hover {
                         transform: perspective(800px) rotateY(0deg) scale(1.2);
                         filter: grayscale(100%);
                     }
                 }
+
                 @media screen and (min-width : 768px) {
                     width: 75%;
                     height: 75%;
@@ -106,24 +113,26 @@ body {
                     position: relative;
                     transition: .6s;
 
-                    &:hover{
-                        transform: perspective(800px) rotateY(0deg) ;
+                    &:hover {
+                        transform: perspective(800px) rotateY(0deg);
                         transform-origin: left;
                         filter: grayscale(100%);
                     }
                 }
             }
         }
-        .pg1{
-            .h1{
-                &::before{
+
+        .pg1 {
+            .h1 {
+                &::before {
                     content: 'INTRODUCTION';
                     font-size: 12px;
                     display: flex;
                     letter-spacing: 5px;
                     margin-bottom: 15px;
                 }
-                &::after{
+
+                &::after {
                     content: '_________________';
                     color: white;
                     display: flex;
@@ -133,16 +142,18 @@ body {
                 }
             }
         }
-        .pg2{
-            h2{
-                &::before{
+
+        .pg2 {
+            h2 {
+                &::before {
                     content: 'About';
                     font-size: 12px;
                     display: flex;
                     letter-spacing: 5px;
                     margin-bottom: 15px;
                 }
-                &::after{
+
+                &::after {
                     content: '_________________';
                     color: white;
                     display: flex;
@@ -151,23 +162,27 @@ body {
                     // background-color: black;
                 }
             }
-            p{
+
+            p {
                 color: #a6a6a6;
                 text-align: justify;
                 font-size: 20px;
             }
         }
-        .pg3{
+
+        .pg3 {
             height: 130vh;
-            h3{
-                &::before{
+
+            h3 {
+                &::before {
                     content: 'ACHIEVEMENTS';
                     font-size: 12px;
                     display: flex;
                     letter-spacing: 5px;
                     margin-bottom: 15px;
                 }
-                &::after{
+
+                &::after {
                     content: '_________________';
                     color: white;
                     display: flex;
@@ -175,12 +190,14 @@ body {
                     margin-top: 8px;
                 }
             }
-            p{
+
+            p {
                 color: #a6a6a6;
                 text-align: justify;
                 font-size: 20px;
             }
-            .box{
+
+            .box {
                 display: flex;
                 flex-direction: column;
                 flex-wrap: wrap;
@@ -188,228 +205,264 @@ body {
                 justify-content: center;
                 width: 50%;
                 height: 200px;
-                }
-                p{
-                    font-size: 20px;
-                    color: white;
-                }
-            }
-            .box1{
-                background: #181818a0;
-                transform: translateY(30px);
-            }
-            .box2{
-                background: #040404;
-
-            }
-            .box3{
-                background: #0404049f;
-                transform: translateY(30px);
-            }
-            .box4{
-                background: #181818;
-            }
-        }
-        .pg4{
-            h2{
-                &::before{
-                    content: 'RESUME';
-                    font-size: 12px;
-                    display: flex;
-                    letter-spacing: 5px;
-                    margin-bottom: 15px;
-                }
-                &::after{
-                    content: '_________________';
-                    color: white;
-                    display: flex;
-                    font-size: 10px;
-                    margin-top: 8px;
-                }
-            }
-            .pg4__boxprnt{
-                border-left: 2px solid rgba(210, 210, 210, 0.863);
-                
-            }
-            .pg4__box{
-                height: 200px;
-                background-color: black;
-                padding: 50px;
-                margin-left: 30px;
-                &:nth-of-type(2){
-                    margin: 30px 0;
-                    margin-left: 30px;
-                }
-            }
-        }
-        .pg5{
-            h3{
-                margin-bottom: 80px;
-                &::before{
-                    content: 'SKILLS';
-                    font-size: 12px;
-                    display: flex;
-                    letter-spacing: 5px;
-                    margin-bottom: 15px;
-                }
-                &::after{
-                    content: '_________________';
-                    color: white;
-                    display: flex;
-                    font-size: 10px;
-                    margin-top: 8px;
-                }
-            }
-            .pg5__box{
-                >div{
-                    position: relative;
-                    border-bottom:1px solid white ;
-                    width: 100%;
-                    height: 70px;
-                    font-size: 30px;
-                    &:nth-of-type(2){
-                        margin: 30px 0;
-                    }
-
-
-                    >span{
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        width: 50px;
-                        height: 50px;
-                        position: absolute;
-                        top: 80%;
-                        left: 50%;
-                        transform: translateX(-50%) translateY(-50%);
-                        font-size: 20px;
-                        // border: 1px solid red;
-
-                    }
-                }
             }
 
-        }
-        .pg6{
-            h3{
-                &::before{
-                    content: 'PORTFOLIO';
-                    font-size: 12px;
-                    display: flex;
-                    letter-spacing: 5px;
-                    margin-bottom: 15px;
-                }
-                &::after{
-                    content: '_________________';
-                    color: white;
-                    display: flex;
-                    font-size: 10px;
-                    margin-top: 8px;
-                }
-            }
-            div{
-                figure{
-                    width: 90%;
-                    height: 250px;
-                    border: 1px solid rgb(162, 162, 162);
-                    margin: 50px 0;
-                    position: relative;
-                    overflow: hidden;
-                    &:hover figcaption{
-                        font-size: 80px;
-                        top: 50%;
-                        left: 50%;
-                        transform: translateX(-50%) translateY(-50%);
-                    }
-
-                    img{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        transition: .4s;
-
-                        &:hover{
-                            transform: scale(1.1);
-                        }
-
-                    }
-                    figcaption{
-                        font-size: 50px;
-                        position: absolute;
-                        top: 60%;
-                        left: 80%;
-                        opacity: .4;
-                        transition: .4s;
-
-                        &:hover{
-                            opacity: 1;
-                        }
-                    }
-                }
-            }
-        }
-        .footer{
-            h3{
-                &::before{
-                    content: 'CONTACT';
-                    font-size: 12px;
-                    display: flex;
-                    letter-spacing: 5px;
-                    margin-bottom: 15px;
-                }
-                &::after{
-                    content: '_________________';
-                    color: white;
-                    display: flex;
-                    font-size: 10px;
-                    margin-top: 8px;
-                }
-            }
-            P{
-                text-align: justify;
-                font-size: 30px;
-                color: rgb(222, 222, 222);
-            }
-        }
-        form{
-            position: relative;
-            z-index: 999;
-            #para1,
-            #para2,
-            #para3,
-            #para4{
-                border-bottom: 1px solid #e8e8e8ed;
-                border-top: none;
-                border-left: none;
-                border-right: none;
-                background-color:rgba(255, 255, 255, 0) ;
-                margin-bottom: 50px;
-                height: 40px;
+            p {
+                font-size: 20px;
                 color: white;
-                
             }
-            #para4{
-                height: auto;
-            }
-            button{
-                color: white;
-                background-color:rgba(255, 255, 255, 0) ;
-                border-radius: 20px;
-                width: 25%;
-                height: 40px;
+        }
+
+        .box1 {
+            background: #181818a0;
+            transform: translateY(30px);
+        }
+
+        .box2 {
+            background: #040404;
+
+        }
+
+        .box3 {
+            background: #0404049f;
+            transform: translateY(30px);
+        }
+
+        .box4 {
+            background: #181818;
+        }
+    }
+
+    .pg4 {
+        h2 {
+            &::before {
+                content: 'RESUME';
+                font-size: 12px;
                 display: flex;
-                justify-content: center;
-                align-items: center;
-                margin: 10px 0;
-                text-transform: capitalize;
-                transition: .4s;
-                &:hover{
-                    background-color: rgb(49, 49, 49);
+                letter-spacing: 5px;
+                margin-bottom: 15px;
+            }
+
+            &::after {
+                content: '_________________';
+                color: white;
+                display: flex;
+                font-size: 10px;
+                margin-top: 8px;
+            }
+        }
+
+        .pg4__boxprnt {
+            border-left: 2px solid rgba(210, 210, 210, 0.863);
+
+        }
+
+        .pg4__box {
+            height: 200px;
+            background-color: black;
+            padding: 50px;
+            margin-left: 30px;
+
+            &:nth-of-type(2) {
+                margin: 30px 0;
+                margin-left: 30px;
+            }
+        }
+    }
+
+    .pg5 {
+        h3 {
+            margin-bottom: 80px;
+
+            &::before {
+                content: 'SKILLS';
+                font-size: 12px;
+                display: flex;
+                letter-spacing: 5px;
+                margin-bottom: 15px;
+            }
+
+            &::after {
+                content: '_________________';
+                color: white;
+                display: flex;
+                font-size: 10px;
+                margin-top: 8px;
+            }
+        }
+
+        .pg5__box {
+            >div {
+                position: relative;
+                border-bottom: 1px solid white;
+                width: 100%;
+                height: 70px;
+                font-size: 30px;
+
+                &:nth-of-type(2) {
+                    margin: 30px 0;
+                }
+
+
+                >span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 50px;
+                    height: 50px;
+                    position: absolute;
+                    top: 80%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    font-size: 20px;
+                    // border: 1px solid red;
+
+                }
+            }
+        }
+
+    }
+
+    .pg6 {
+        h3 {
+            &::before {
+                content: 'PORTFOLIO';
+                font-size: 12px;
+                display: flex;
+                letter-spacing: 5px;
+                margin-bottom: 15px;
+            }
+
+            &::after {
+                content: '_________________';
+                color: white;
+                display: flex;
+                font-size: 10px;
+                margin-top: 8px;
+            }
+        }
+
+        div {
+            figure {
+                width: 90%;
+                height: 250px;
+                border: 1px solid rgb(162, 162, 162);
+                margin: 50px 0;
+                position: relative;
+                overflow: hidden;
+
+                &:hover figcaption {
+                    font-size: 80px;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: .4s;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                }
+
+                figcaption {
+                    font-size: 50px;
+                    position: absolute;
+                    top: 60%;
+                    left: 80%;
+                    opacity: .4;
+                    transition: .4s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
                 }
             }
         }
     }
-    
-    
 
-   
+    .footer {
+        h3 {
+            &::before {
+                content: 'CONTACT';
+                font-size: 12px;
+                display: flex;
+                letter-spacing: 5px;
+                margin-bottom: 15px;
+            }
+
+            &::after {
+                content: '_________________';
+                color: white;
+                display: flex;
+                font-size: 10px;
+                margin-top: 8px;
+            }
+        }
+
+        P {
+            text-align: justify;
+            font-size: 30px;
+            color: rgb(222, 222, 222);
+        }
+    }
+
+    form {
+        position: relative;
+        z-index: 999;
+
+        #para1,
+        #para2,
+        #para3,
+        #para4 {
+            border-bottom: 1px solid #e8e8e8ed;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background-color: rgba(255, 255, 255, 0);
+            margin-bottom: 50px;
+            height: 40px;
+            color: white;
+
+        }
+
+        #para4 {
+            height: auto;
+        }
+
+        button {
+            color: white;
+            background-color: rgba(255, 255, 255, 0);
+            border-radius: 20px;
+            width: 25%;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 0;
+            text-transform: capitalize;
+            transition: .4s;
+
+            &:hover {
+                background-color: rgb(49, 49, 49);
+            }
+        }
+    }
+}
+
+.icon {
+    position: relative;
+    font-size: 35px;
+    color: #a6a6a6;
+    margin: 0 20px;
+    cursor: pointer;
+
+    &:hover {
+        color: white;
+    }
+}

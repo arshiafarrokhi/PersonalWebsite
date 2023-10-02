@@ -363,4 +363,15 @@ body {
 }
 #main form button:hover {
   background-color: rgb(49, 49, 49);
+}
+
+.icon {
+  position: relative;
+  font-size: 35px;
+  color: #a6a6a6;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.icon:hover {
+  color: white;
 }/*# sourceMappingURL=master.css.map */
