@@ -4,6 +4,7 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  overflow-x: hidden;
 }
 
 #main {
@@ -20,7 +21,7 @@ body {
   position: fixed;
   top: 5%;
   left: 90%;
-  z-index: 999;
+  z-index: 998;
   font-size: 30px;
 }
 #main .page1 .menu:hover {
@@ -43,6 +44,7 @@ body {
   }
 }
 #main .page1 .lhead .h-img > article {
+  font-weight: 700;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,7 +58,7 @@ body {
   white-space: nowrap;
   transition: 0.4s;
   opacity: 0;
-  animation: 1s ease-in-out infinite alternate forwards;
+  animation: 0.8s ease-in-out infinite alternate forwards;
   text-shadow: #FC0 5px 10px 200px;
 }
 #main .page1 .lhead .h-img > article:hover {
@@ -385,7 +387,7 @@ body {
   height: 100vh;
   position: fixed;
   top: 0;
-  z-index: 998;
+  z-index: 997;
   left: -100%;
   transition: 0.8s ease-in-out;
   border-radius: 16px;
@@ -414,4 +416,42 @@ body {
 
 .HambToggle {
   left: 0 !important;
+}
+
+.HambLink {
+  animation: 0.6s ease-in-out infinite alternate forwards;
+}
+.HambLink:hover {
+  animation-name: anime2;
+}
+
+@keyframes anime2 {
+  to {
+    opacity: 0.5;
+    scale: 0.9;
+  }
+  from {
+    opacity: 1;
+    scale: 1.1;
+  }
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 0;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle > span {
+  display: flex;
+  width: 4px;
+  height: 4px;
+  border-radius: inherit;
+  background-color: wheat;
+  transform: translate(-50%, -50%);
 }/*# sourceMappingURL=master.css.map */

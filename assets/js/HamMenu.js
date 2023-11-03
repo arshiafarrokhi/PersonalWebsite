@@ -1,4 +1,13 @@
-document.getElementById('HambMenuIcon').addEventListener('click' , ()=>{
+let HambMenu = document.getElementById('HambMenu')
+
+
+document.getElementById('HambMenuIcon').addEventListener('click', () => {
     console.log(document.getElementById('HambMenu'));
-    document.getElementById('HambMenu').classList.toggle('HambToggle')
+    HambMenu.classList.toggle('HambToggle')
+})
+
+document.querySelectorAll('.HambLink').forEach((val) => {
+    val.addEventListener('click', () => {
+        HambMenu.classList.remove('HambToggle');
+    })
 })
