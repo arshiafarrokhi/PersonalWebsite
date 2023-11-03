@@ -177,6 +177,7 @@ body {
   justify-content: center;
   width: 50%;
   height: 200px;
+  font-size: 10px !important;
 }
 #main .page1 .pg3 p {
   font-size: 20px;
@@ -238,7 +239,6 @@ body {
   color: white;
   display: flex;
   font-size: 10px;
-  margin-top: 8px;
 }
 #main .pg5 .pg5__box > div {
   position: relative;
@@ -246,9 +246,13 @@ body {
   width: 100%;
   height: 70px;
   font-size: 30px;
+  margin-top: 50px;
 }
-#main .pg5 .pg5__box > div:nth-of-type(2) {
-  margin: 30px 0;
+#main .pg5 .pg5__box > div:first-of-type {
+  margin: none;
+}
+#main .pg5 .pg5__box > div:last-of-type {
+  margin-bottom: 100px;
 }
 #main .pg5 .pg5__box > div > span {
   display: flex;
